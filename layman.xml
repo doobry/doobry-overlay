@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layman>
+	<overlay
+		name = "doobry"
+		status="unofficial"
+		type = "git"
+		src = "git://github.com/doobry/doobry-overlay.git"
+		contact = "chris.beswick@gmail.com">
+		<link>http://github.com/doobry/doobry-overlay</link>
+		<description>doobry's random ebuilds</description>
+	</overlay>
+</layman>
