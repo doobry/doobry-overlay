@@ -1,0 +1,16 @@
+#!/sbin/runscript
+# Copyright 1999-2012 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+nr_config="/etc/newrelic/nrsysmond.cfg"
+pidfile="/var/run/newrelic/nrsysmond.pid"
+
+command="/usr/sbin/nrsysmond"
+command_args="-c ${nr_config} -p ${pidfile}"
+start_stop_daemon_args="--user newrelic"
+
+depend() {
+	need net
+}
+
